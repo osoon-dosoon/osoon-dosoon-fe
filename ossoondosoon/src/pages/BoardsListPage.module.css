@@ -1,0 +1,234 @@
+.wrap {
+  position: relative;
+  display: grid;
+  gap: 14px;
+}
+
+.state {
+  padding: 24px 0;
+  color: #444;
+}
+
+.header {
+  padding: 14px 14px 6px;
+}
+
+.titleBlock {
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid #eee;
+  background: linear-gradient(135deg, #f7f7ff, #f7fff9);
+}
+
+.kickerChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #eee;
+}
+
+.titleRow {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.titleIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 14px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  flex: 0 0 auto;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.count {
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #555;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #eee;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.newBtn {
+  border: 1px solid #eaeaea;
+  background: #fff;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.newBtn:hover {
+  background: #f6f6f6;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px;
+  display: grid;
+  gap: 8px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+.card:hover {
+  background: #fafafa;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardTitle {
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chev {
+  font-size: 20px;
+  color: #999;
+}
+
+.meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #666;
+}
+
+.writer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.date {
+  color: #888;
+}
+
+.preview {
+  font-size: 13px;
+  color: #444;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 2줄 미리보기 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Empty state */
+.empty {
+  border: 1px dashed #e5e5e5;
+  border-radius: 16px;
+  background: #fff;
+  padding: 18px;
+  text-align: center;
+  display: grid;
+  gap: 6px;
+}
+
+.emptyIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 6px;
+  font-size: 18px;
+}
+
+.emptyTitle {
+  font-weight: 800;
+}
+
+.emptyDesc {
+  font-size: 13px;
+  color: #666;
+}
+
+.emptyCta {
+  margin-top: 8px;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.emptyCta:hover {
+  opacity: 0.92;
+}
+
+/* Floating + button */
+.fab {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  font-size: 28px;
+  line-height: 0;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.fab:hover {
+  opacity: 0.92;
+}

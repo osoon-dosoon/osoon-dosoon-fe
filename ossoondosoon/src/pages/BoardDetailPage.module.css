@@ -1,0 +1,178 @@
+.wrap {
+  display: grid;
+  gap: 12px;
+  padding-bottom: 76px; /* 하단 고정 바 공간 */
+}
+
+.state {
+  padding: 24px 0;
+  color: #444;
+}
+
+/* Top bar */
+.topBar {
+  display: grid;
+  grid-template-columns: 40px 1fr 64px;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 2px;
+}
+
+.backBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  background: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+.backBtn:hover {
+  background: #f6f6f6;
+}
+
+.topTitle {
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.topActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.editBtn {
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: #fff;
+  color: #111;
+  font-weight: 800;
+}
+
+.editBtn:hover {
+  background: #f6f6f6;
+}
+
+/* Cards */
+.headerCard {
+  border: 1px solid #eee;
+  border-radius: 18px;
+  padding: 16px;
+  background: linear-gradient(135deg, #f7f7ff, #f7fff9);
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #444;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #eee;
+}
+
+.title {
+  margin: 10px 0 8px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+.metaItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contentCard {
+  border: 1px solid #eee;
+  border-radius: 18px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+.contentLabel {
+  font-size: 12px;
+  font-weight: 800;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.content {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: #222;
+  font-size: 14px;
+}
+
+/* Bottom bar */
+.bottomBar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 14px;
+  width: min(720px, calc(100% - 32px));
+  border: 1px solid #eee;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ghostBtn {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  background: #fff;
+  color: #111;
+  font-weight: 800;
+}
+
+.ghostBtn:hover {
+  background: #f6f6f6;
+}
+
+.dangerBtn {
+  flex: 1;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.dangerBtn:hover {
+  opacity: 0.92;
+}
+
+.dangerBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
