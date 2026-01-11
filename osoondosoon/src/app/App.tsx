@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import BoardsListPage from "@/pages/BoardsListPage";
 import BoardDetailPage from "@/pages/BoardDetailPage";
 import BoardFormPage from "@/pages/BoardFormPage";
